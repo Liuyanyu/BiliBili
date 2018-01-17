@@ -1,0 +1,30 @@
+/*字体*/
+@font-face {
+    font-family: 'SingleMaltaRegular';
+    src: url('../fonts/shimesone_personal-webfont.eot');
+    src: url('../fonts/shimesone_personal-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/shimesone_personal-webfont.woff') format('woff'),
+    url('../fonts/shimesone_personal-webfont.ttf') format('truetype'),
+    url('../fonts/shimesone_personal-webfont.svg#SingleMaltaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fonts{margin-left: 500px;font-size:80px;height: 80px;font-family:"SingleMaltaRegular";color: black;}
+/*左侧图片摆动*/
+.left_img{margin-top: -200px;float: left;transition: linear;transform-origin: top;animation-duration: 5s;animation-iteration-count: infinite;animation-name:rock}
+/*摆动的动画*/
+@-webkit-keyframes rock{
+    0% {transform: rotate(0deg);}
+    27% {transform: rotate(8deg);}
+    87% {transform: rotate(-16deg);}
+    100% {transform: translate(0px);}
+}
+
+.right_img{margin-bottom:90px;width: 580px;height: 363px;float: left;overflow: hidden}
+.right_img a{display: none}
+/*右侧歌词*/
+.font{width:300px;height: 280px;overflow: hidden;margin-top: -80px;right:0}
+ul li {line-height:30px;list-style: none;padding-left: 30px}
+ul li a{text-decoration: none;}
+.bili{float: right;margin-top:20px}
