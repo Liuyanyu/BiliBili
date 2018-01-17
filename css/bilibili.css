@@ -1,0 +1,230 @@
+/*轮播图*/
+.wrapper .head .nav_img_left{margin-left: 14%;width:440px;height: 220px;overflow: hidden;position: relative;float: left}
+.wrapper .head .nav_img_left .scroll{float: left;width:440px;height: 220px;}
+.wrapper .head .nav_img_left .scroll a{display: none}
+.wrapper .head .nav_img_left .page-icon{position: absolute;text-align: center;bottom: 10px;margin-left: 70%}
+.wrapper .head .nav_img_left .page-icon li{display: inline-block;border-radius: 50%;margin: 0 5px;width: 10px;height: 10px;background-color: white}
+.wrapper .head .nav_img_right{width: 540px;height: 220px;margin-left:630px}
+.wrapper .head .nav_img_right li{display: inline-block;margin-left: 20px}
+.wrapper .head .nav_img_right .zz{margin-top: 15px}
+.wrapper .head .nav_img_right li img:hover{
+    animation: rotater 1s ;
+    -webkit-animation: rotater 1s ;
+    -moz-animation: rotater 1s ;
+    -o-animation: rotater 1s ;
+    -ms-animation: rotater 1s ;
+
+}
+/*图片缩小且旋转360度的动画*/
+@keyframes rotater {
+    0% {-webkit-transform: rotate(0deg) scale(1)}
+    100% {-webkit-transform: rotate(360deg) scale(0)}
+}
+@-webkit-keyframes rotater {
+    0% {-webkit-transform: rotate(0deg) scale(1)}
+    100% {-webkit-transform: rotate(360deg) scale(0)}
+}
+@-moz-keyframes rotater{
+    0% {-webkit-transform: rotate(0deg) scale(1)}
+    100% {-webkit-transform: rotate(360deg) scale(0)}
+}
+@-o-keyframes rotater{
+    0% {-webkit-transform: rotate(0deg) scale(1)}
+    100% {-webkit-transform: rotate(360deg) scale(0)}
+}
+@-ms-keyframes rotater{
+    0% {-webkit-transform: rotate(0deg) scale(1)}
+    100% {-webkit-transform: rotate(360deg) scale(0)}
+}
+
+
+/*主方法*/
+.wrapper .main{width:980px;margin-left:14%;}
+
+/*推广*/
+.wrapper .main .main_promotion{height:240px;width:100%;background: url("../img/tuiguang.jpg")no-repeat}
+.wrapper .main .main_promotion .main_promotion_title{width: 980px;height: 40px;}
+.wrapper .main .main_promotion .main_promotion_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_promotion .main_promotion_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_promotion .main_promotion_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_promotion .main_promotion_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_promotion .main_promotion_left ul li{display: inline-block;width: 160px;height: 150px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_promotion .main_promotion_left ul li img{
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+/*图片放大*/
+.wrapper .main .main_promotion .main_promotion_left ul li img:hover {
+    z-index: 11;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+}
+.wrapper .main .main_promotion .main_promotion_left ul li a{color: #000000;font-size: 8px;overflow: hidden}
+.wrapper .main .main_promotion .main_promotion_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_promotion .main_promotion_left ul li p{height:16px;width: 160px}
+.wrapper .main .main_promotion .main_promotion_right img{float: right;margin-top: 15px;vertical-align: top;display: block}
+/*正在直播*/
+.wrapper .main .main_broadcasting{height:400px;width:100%;background:url("../img/bro_ing.jpg")no-repeat;}
+.wrapper .main .main_broadcasting .main_broadcasting_title{width: 980px;height: 40px;}
+.wrapper .main .main_broadcasting .main_broadcasting_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_broadcasting .main_broadcasting_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_broadcasting .main_broadcasting_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_broadcasting .main_broadcasting_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li{display: inline-block;width: 160px;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li img{-webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+/*图片缩小*/
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li img:hover{
+    z-index: 11;
+    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+}
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_broadcasting .main_broadcasting_left ul li p{height:16px;}
+.wrapper .main .main_broadcasting .main_broadcasting_right img{float: right;margin-top: 15px;vertical-align: top;display: block;}
+
+/*动画*/
+.wrapper .main .main_animation{height:400px;width:100%;background:url("../img/ani_title.jpg")no-repeat}
+.wrapper .main .main_animation .main_animation_title{width: 980px;height: 40px;}
+.wrapper .main .main_animation .main_animation_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_animation .main_animation_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_animation .main_animation_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_animation .main_animation_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_animation .main_animation_left ul li{display: inline-block;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_animation .main_animation_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_animation .main_animation_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_animation .main_animation_left ul li p{height:16px;}
+.wrapper .main .main_animation .main_animation_left img{float: right;margin-top: 15px;vertical-align: top;display: block}
+.wrapper .main .main_animation .main_animation_right ul {width: 260px;height: 300px;float: right;padding-top: 24px;}
+.wrapper .main .main_animation .main_animation_right ul li{width: 250px;height: 20px;padding-top: 18px;display: inline-flex;overflow: hidden;text-overflow: ellipsis;counter-increment: listxh;white-space: nowrap}
+.wrapper .main .main_animation .main_animation_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_animation .main_animation_right ul li:before{content: counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_animation .main_animation_right ul li:first-child:before{background-color: #3699DB}
+.wrapper .main .main_animation .main_animation_right ul li:nth-child(2):before{background-color: #3699DB}
+.wrapper .main  .main_animation_right ul li:nth-child(3):before{background-color: #3699DB}
+
+/*番剧*/
+.wrapper .main .main_fanju{height:510px;width: 100%;background:url("../img/fanju_title.jpg")no-repeat;margin-top: 20px}
+.wrapper .main .main_fanju .main_fanju_title{width: 980px;height: 40px;}
+.wrapper .main .main_fanju .main_fanju_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_fanju .main_fanju_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_fanju .main_fanju_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_fanju .main_fanju_left{width:700px;height:400px;margin-top: 15px;float: left;overflow:auto;}
+.wrapper .main .main_fanju .main_fanju_left::-webkit-scrollbar {display: none;}
+.wrapper .main .main_fanju .main_fanju_left ul li{display: inline-block;width: 180px;height: 110px;margin-right:44px;overflow: hidden}
+.wrapper .main .main_fanju .main_fanju_left ul li img{float: left;width: 70px;height: 70px}
+.wrapper .main .main_fanju .main_fanju_left ul li a{color: #000000;font-size: 8px;margin-left: 10px}
+.wrapper .main .main_fanju .main_fanju_left ul li span{color: darkgray;font-size: 12px;margin-left: 10px;}
+.wrapper .main .main_fanju .main_fanju_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_fanju .main_fanju_right ul {width: 260px;height: 400px;float: right;}
+.wrapper .main .main_fanju .main_fanju_right ul li{display: inline-block;width: 250px;height: 20px;padding-bottom: 10px;counter-increment: listxh;white-space: nowrap}
+.wrapper .main .main_fanju .main_fanju_right ul li:last-child:before{padding: 2px;font-size: 14px}
+.wrapper .main .main_fanju .main_fanju_right ul li:before{content: counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_fanju .main_fanju_right ul li:first-child:before{background-color:#3699DB}
+.wrapper .main .main_fanju .main_fanju_right ul li:nth-child(2):before{background-color:#3699DB}
+.wrapper .main .main_fanju .main_fanju_right ul li:nth-child(3):before{background-color:#3699DB}
+.wrapper .main .main_fanju .main_fanju_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_fanju .main_fanju_right ul li span{color: darkgray;font-size: 13px;margin-left: 10px}
+/*音乐*/
+.wrapper .main .main_music{height:400px;width:100%;background:url("../img/ani_title.jpg")no-repeat}
+.wrapper .main .main_music .main_music_title{width: 980px;height: 40px;}
+.wrapper .main .main_music .main_music_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_music .main_music_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_music .main_music_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_music .main_music_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_music .main_music_left ul li{display: inline-block;width: 160px;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_music .main_music_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_music .main_music_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_music .main_music_left ul li p{height:16px;}
+.wrapper .main .main_music .main_music_left img{float: right;margin-top: 15px;vertical-align: top;display: block}
+.wrapper .main .main_music .main_music_right ul {width: 260px;height: 300px;float: right;padding-top: 24px}
+.wrapper .main .main_music .main_music_right ul li{display: inline-block;width: 250px;height: 20px;padding-top: 20px;counter-increment: listxh;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.wrapper .main .main_music .main_music_right ul li:before{content: counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_music .main_music_right ul li:first-child:before{background-color:#3699DB}
+.wrapper .main .main_music .main_music_right ul li:nth-child(2):before{background-color:#3699DB}
+.wrapper .main .main_music .main_music_right ul li:nth-child(3):before{background-color:#3699DB}
+.wrapper .main .main_music .main_music_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_music .main_music_right ul  .more{color: black;font-size: 15px;text-align: center;background-color: lightgray;padding: 5px 90px;}
+.wrapper .main .main_music .main_music_right ul  .more:hover{background-color:darkgray;color: white}
+/*游戏*/
+.wrapper .main .main_game{height:400px;width:100%;background:url("../img/game.jpg")no-repeat}
+.wrapper .main .main_game .main_game_title{width: 980px;height: 40px;}
+.wrapper .main .main_game .main_game_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_game .main_game_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_game .main_game_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_game .main_game_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_game .main_game_left ul li{display: inline-block;width: 160px;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_game .main_game_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_game .main_game_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_game .main_game_left ul li p{height:16px;}
+.wrapper .main .main_game .main_game_left img{float: right;margin-top: 15px;vertical-align: top;display: block}
+.wrapper .main .main_game .main_game_right ul {width: 260px;height: 300px;float: right;padding-top: 24px}
+.wrapper .main .main_game .main_game_right ul li{display: inline-block;width: 250px;height: 20px;padding-top: 20px;counter-increment:listxh;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.wrapper .main .main_game .main_game_right ul li:before{content:counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_game .main_game_right ul li:first-child:before{background-color:#3699DB}
+.wrapper .main .main_game .main_game_right ul li:nth-child(2):before{background-color:#3699DB}
+.wrapper .main .main_game .main_game_right ul li:nth-child(3):before{background-color: #3699DB}
+.wrapper .main .main_game .main_game_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_game .main_game_right ul .more{color: black;font-size: 15px;text-align: center;background-color: lightgray;padding: 5px 90px;}
+.wrapper .main .main_game .main_game_right ul .more:hover{background-color:darkgray;color: white}
+/*娱乐*/
+.wrapper .main .main_amusement{height:400px;width:100%;background:url("../img/game.jpg")no-repeat}
+.wrapper .main .main_amusement .main_amusement_title{width: 980px;height: 40px;}
+.wrapper .main .main_amusement .main_amusement_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_amusement .main_amusement_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_amusement .main_amusement_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_amusement .main_amusement_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_amusement .main_amusement_left ul li{display: inline-block;width: 160px;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_amusement .main_amusement_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_amusement .main_amusement_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_amusement .main_amusement_left ul li p{height:16px;}
+.wrapper .main .main_amusement .main_amusement_left img{float: right;margin-top: 15px;vertical-align: top;display: block}
+.wrapper .main .main_amusement .main_amusement_right ul {width: 260px;height: 300px;float: right;padding-top: 24px}
+.wrapper .main .main_amusement .main_amusement_right ul li{display: inline-block;width: 250px;height: 20px;padding-top: 20px;overflow: hidden;counter-increment: listxh;white-space: nowrap;text-overflow: ellipsis;}
+.wrapper .main .main_amusement .main_amusement_right ul li:before{content:counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_amusement .main_amusement_right ul li:first-child:before{background-color:#3699DB}
+.wrapper .main .main_amusement .main_amusement_right ul li:nth-child(2):before{background-color:#3699DB}
+.wrapper .main .main_amusement .main_amusement_right ul li:nth-child(3):before{background-color: #3699DB}
+.wrapper .main .main_amusement .main_amusement_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_amusement .main_amusement_right ul .more{color: black;font-size: 15px;text-align: center;background-color: lightgray;padding: 5px 90px;}
+.wrapper .main .main_amusement .main_amusement_right ul .more:hover{background-color:darkgray;color: white}
+/*电影*/
+.wrapper .main .main_movie{height:400px;width:100%;background:url("../img/game.jpg")no-repeat}
+.wrapper .main .main_movie .main_movie_title{width: 980px;height: 40px;}
+.wrapper .main .main_movie .main_movie_title .p1{margin-left: 50px;padding-top:5px;font-size: 22px;float: left}
+.wrapper .main .main_movie .main_movie_title .p2{float:right;background-color:#E5E9EF;width:260px;height:35px;border: 1px solid #E5E9EF;border-radius: 5px;}
+.wrapper .main .main_movie .main_movie_title .p2 a{float: right;color: black;font-size: 10px;margin-right:18px;padding-top: 10px}
+.wrapper .main .main_movie .main_movie_left{width:720px;height:150px;margin-top: 15px;float: left;}
+.wrapper .main .main_movie .main_movie_left ul li{display: inline-block;width: 160px;height: 160px;margin-right:20px;overflow: hidden}
+.wrapper .main .main_movie .main_movie_left ul li a{color: #000000;font-size: 8px;}
+.wrapper .main .main_movie .main_movie_left ul li a:hover{color:dodgerblue;}
+.wrapper .main .main_movie .main_movie_left ul li p{height:16px;}
+.wrapper .main .main_movie .main_movie_left img{float: right;margin-top: 15px;vertical-align: top;display: block}
+.wrapper .main .main_movie .main_movie_right ul {width: 260px;height: 300px;float: right;padding-top: 24px;}
+.wrapper .main .main_movie .main_movie_right ul li{display: inline-block;width: 250px;height: 20px;padding-top: 20px;overflow: hidden;counter-increment: listxh;white-space: nowrap;text-overflow: ellipsis}
+.wrapper .main .main_movie .main_movie_right ul li:before{content: counter(listxh);background-color: #444;padding: 2px 5px;color: #fff;margin-right: 5px}
+.wrapper .main .main_movie .main_movie_right ul li:first-child:before{background-color:#3699DB}
+.wrapper .main .main_movie .main_movie_right ul li:nth-child(2):before{background-color:#3699DB}
+.wrapper .main .main_movie .main_movie_right ul li:nth-child(3):before{background-color: #3699DB}
+.wrapper .main .main_movie .main_movie_right ul li a{color: black;font-size: 13px}
+.wrapper .main .main_movie .main_movie_right ul .more{color: black;font-size: 15px;text-align: center;background-color: lightgray;padding: 5px 90px;}
+.wrapper .main .main_movie .main_movie_right ul .more:hover{background-color:darkgray;color: white}
+
+.wrapper .main_nav_right{width: 50px;height: 320px;background-color:#F6F9FA;margin-left:1180px;position: absolute;clear: both}
+.wrapper .main_nav_right ul li{padding:10px 14px 10px 10px;}
+.wrapper .main_nav_right ul li:hover{background-color: #02A2D6;color: white}
+.wrapper .main_nav_right a{color: black;font-size: 12px;}
